@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/leena-frontend/static/css/main.52206349.css",
+    "main.js": "/leena-frontend/static/js/main.03daba90.js",
+    "static/media/hero.jpeg": "/leena-frontend/static/media/hero.c2f378b87951dd980e06.jpeg",
+    "static/media/cat4.jpg": "/leena-frontend/static/media/cat4.6653e79d5a8bcf7174f8.jpg",
+    "static/media/cat3.jpg": "/leena-frontend/static/media/cat3.9ee19a1858cf88771e50.jpg",
+    "static/media/about2.jpg": "/leena-frontend/static/media/about2.d3233a8d84714aea70e3.jpg",
+    "static/media/cat1.jpg": "/leena-frontend/static/media/cat1.cb1005da420f15795ab6.jpg",
+    "static/media/cat2.jpg": "/leena-frontend/static/media/cat2.945ff817432a193459f2.jpg",
+    "static/media/about1.jpg": "/leena-frontend/static/media/about1.e259575f4a6126d16a20.jpg",
+    "static/media/logo.png": "/leena-frontend/static/media/logo.d1d034fea155b7e5c0a4.png",
+    "index.html": "/leena-frontend/index.html",
+    "main.52206349.css.map": "/leena-frontend/static/css/main.52206349.css.map",
+    "main.03daba90.js.map": "/leena-frontend/static/js/main.03daba90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52206349.css",
+    "static/js/main.03daba90.js"
+  ]
+}
