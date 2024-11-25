@@ -1,0 +1,71 @@
+.cart{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, visibility .3s ease;
+    font-family: var(--second-font-family);
+} 
+.cart.show{
+    opacity: 1;
+    visibility: visible;
+}
+.cart .xmark{
+    left: 330px;
+    top: 20px;
+    cursor: pointer;
+    color: #666;
+}
+.cart .cart-container{
+    position: absolute;
+    right: -100%;
+    height: 100vh;
+    width: 350px;
+    background-color: #fff;
+    transition: right .3s ease;
+}
+.cart.show .cart-container{
+    right: 0;
+}
+.cart .cart-container .header p{
+    font-family: var(--first-font-family);
+    font-size: 20px;
+}
+.cart .cart-container .header .line{
+    width: 30px;
+    height: 3px;
+    background-color: #eee;
+    margin: auto;
+}
+.cart .cart-container .body .cart-products{
+    height: 300px;
+    overflow-y: scroll;
+}
+.cart .cart-container .body .empty i{
+    font-size: 60px;
+    color: #eee;
+}
+.cart .cart-container .body .empty p,
+.cart .cart-container .body .empty a{
+    font-family: var(--second-font-family);
+}
+.cart .cart-container .body .empty a{
+    text-transform: uppercase;
+}
+.cart .cart-container .body .cart-product a{
+    color: black;
+}
+.cart .cart-container .body .cart-product img{
+    width: 50px;
+    height: 50px;
+}
+.cart .cart-container .body .cart-product .infos{
+    font-size: 12px;
+}
+.cart .cart-container .body .cart-product i{
+    cursor: pointer;
+}

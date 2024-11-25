@@ -1,0 +1,41 @@
+.navbar{
+    background-color: #fff;
+    width: 100%;
+}
+.navbar.active{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    animation: slideDown .5s ease-in-out;
+    background-color: #ffffffb7;
+}
+.navbar img{
+    width: 150px;
+}
+.navbar i{
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}
+.navbar .cart-div .dot{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    top: 10px;
+    right: -10px;
+    color: #fff;
+}
+.navbar .login{
+    border-radius: 50px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+@keyframes slideDown {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

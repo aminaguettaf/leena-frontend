@@ -1,0 +1,89 @@
+.new h1{
+    font-family: var(--first-font-family);
+    font-size: 60px;
+}
+.new h1::before,
+.new h1::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 20%;
+    background-color: #eee;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.new h1::before{
+    left: 0;
+}
+.new h1::after{
+   right: 0;
+}
+.carousel{
+    height: 470px;
+}
+.carousel-indicators{
+    bottom: -10%;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+.angle{
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden; 
+}
+.angle.left{
+    left: -40px;
+}
+.angle.right{
+    right: -40px;
+}
+.angle i{ 
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px 10px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    transition: transform .3s;
+}
+.angle.left i{
+    transform: translateX(105%);
+}
+.angle.right i{
+    transform: translateX(-105%);
+}
+.carousel:hover  i{
+    transform: translateX(0);
+}
+
+@media (max-width:1029px) {
+    .new h1{
+        font-size: 40px;
+    }
+}
+@media (max-width:996px) {
+    .new h1::before,
+    .new h1::after{
+    width: 100%;
+    }
+   .new h1::before{
+    top: 0%;
+   }
+   .new h1::after{
+    top: 100%;
+   }
+}
+@media (max-width:776px) {
+    .carousel .item{
+        width: 700px;
+    }
+}

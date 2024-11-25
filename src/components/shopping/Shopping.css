@@ -1,0 +1,88 @@
+.shopping{
+    font-family: var(--second-font-family);
+}
+.shopping .table{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center ;
+    font-size: 14px;
+}
+.shopping .table.header{
+    border-bottom: 4px solid #eee;
+}
+.shopping .table.body{
+    border-bottom: 1px solid #eee;
+}
+.shopping .table.body div img{
+    width: 30%;
+}
+.shopping .table.body div i{
+    cursor: pointer;
+    color: #666;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shopping .table.body .qty{
+    border: 1px solid #666;
+    height: fit-content;
+    width: fit-content;
+}
+.shopping .table.body .qty span{
+    cursor: pointer;
+    background-color: #eee;
+}
+.shopping .btns a{
+    border: 2px solid black;
+    transition: .3s;
+    color: black;
+    font-size: 16px;
+}
+.shopping .btns a:hover{
+    background-color: black;
+    color: #fff;
+}
+.shopping .btns button{
+    font-size: 16px;
+}
+.shopping .cart-totals{
+    font-size: 16px;
+}
+.shopping .cart-totals .header{
+    border-bottom: 4px solid #eee;
+}
+.shopping .cart-totals .shipping div{
+    font-size: 12px;
+}
+.shopping .cart-totals .shipping .change-ad{
+    cursor: pointer;
+}
+.shopping .cart-totals .adress{
+    width: 250px;
+    background-color: #eee;
+    padding: 10px;
+    right: 0;
+}
+.shopping .cart-totals a{
+    width: 100%;
+    display: block;
+}
+@media (max-width:992px) {
+    .shopping div{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:526px) {
+    .shopping .table{
+        font-size: 12px;
+    }
+    .shopping .btns a,
+    .shopping .btns button,
+    .shopping .cart-totals{
+        font-size: 13px;
+    }
+}

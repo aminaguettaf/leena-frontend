@@ -1,0 +1,49 @@
+.login .login-container{
+    width: 400px;
+    height: 600px;
+    margin: 80px auto;
+}
+.login .login-container .title{
+    margin: 0 auto 20px;
+}
+.login .login-container .title h3{
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.login .login-container .title p{
+    width: 50px;
+    height: 3px;
+    background-color: #000;
+}
+.login .login-container form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid #000;
+}
+.login .login-container form input::placeholder{
+    color: var(--second-color);
+}
+.login .login-container form .qst{
+    cursor: pointer;
+    font-size: 14px;
+}
+.login .login-container form button{
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+@media (max-width:550px){
+    .login .login-container{
+        width: 100%;
+    }
+    .login .login-container .title{
+        width: 100%;
+    }
+}
