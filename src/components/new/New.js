@@ -29,7 +29,7 @@ const New = () => {
                                 <div className='d-flex gap-2'>
                                     {group.map((product)=>{
                                     return(
-                                            <Item id={product._id} key={product._id} image={`http://localhost:4000/images/${product.image[0]}`} name={product.name} price={product.price}/>
+                                            <Item id={product._id} key={product._id} image={`https://leena-backend-5.onrender.com/images/${product.image[0]}`} name={product.name} price={product.price}/>
                                     )})}
                                 </div>
                             </div>

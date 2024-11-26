@@ -25,10 +25,10 @@ const Login = () => {
         e.preventDefault();
         let url;
         if(currState === 'sign up'){
-            url = 'http://localhost:4000/api/user/register';
+            url = 'https://leena-backend-5.onrender.com/api/user/register';
         }
         else if(currState === 'login'){
-            url = 'http://localhost:4000/api/user/login';
+            url = 'https://leena-backend-5.onrender.com/api/user/login';
         }
         const response = await axios.post(url, data);
         if(response.data.success){

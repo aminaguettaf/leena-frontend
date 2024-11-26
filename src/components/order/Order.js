@@ -10,7 +10,7 @@ const Order = () => {
 
   const showOrder = async () => {
     try {
-      const response = await axios.post('http://localhost:4000/api/order/user-orders',{},{ headers: { token } });
+      const response = await axios.post('https://leena-backend-5.onrender.com/api/order/user-orders',{},{ headers: { token } });
       if (response.data.success) {
         setOrder(response.data.order);
         console.log(response.data.order);

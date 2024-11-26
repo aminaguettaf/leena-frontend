@@ -87,7 +87,7 @@ const Shop = ({ category }) => {
         <div className="product-container my-5">
           {currentProducts.map((product, index) => {
             return (
-              <Item id={product._id} key={product._id} name={product.name} price={product.price} image={`http://localhost:4000/images/${product.image[0]}`}/>
+              <Item id={product._id} key={product._id} name={product.name} price={product.price} image={`https://leena-backend-5.onrender.com/images/${product.image[0]}`}/>
             );
           })}
         </div>

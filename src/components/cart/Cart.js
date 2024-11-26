@@ -27,7 +27,7 @@ const Cart = () => {
                       return (
                         <div  key={`${id}-${size}-${color}`} className="cart-product d-flex justify-content-between mb-3 p-2">
                           <Link to={`/product/${id}`} className='d-flex align-items-center gap-3'>
-                            <img src={`http://localhost:4000/images/${product.image[0]}`} alt="" />
+                            <img src={`https://leena-backend-5.onrender.com/images/${product.image[0]}`} alt="" />
                             <div className='infos'>
                               <p className="name fw-bold">{product.name}</p>
                               <p className='size'>{size}</p>

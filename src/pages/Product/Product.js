@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 
 const Product = () => {
     const[image, setImage] = useState();
-    const {allProducts, addToCart, setShowCart, cart, removeFromCart} = useContext(AppContext);
+    const {allProducts, addToCart, cart, removeFromCart} = useContext(AppContext);
     const params = useParams();
     const product = allProducts.find(p => p._id === params.id);
     const[color, setColor] = useState('');
@@ -38,14 +38,14 @@ const Product = () => {
             <div className='imgs '>
                 {product?.image?.map((image, index)=>{
                     return(
-                        <img key={index} onClick={()=>setImage(image)} className='mb-2' src={`http://localhost:4000/images/${image}`} alt=''/>
+                        <img key={index} onClick={()=>setImage(image)} className='mb-2' src={`https://leena-backend-5.onrender.com/images/${image}`} alt=''/>
                     )
                 })}
             </div>
             <div className='current-img'>
                 {!image ?
-                <img src={`http://localhost:4000/images/${product?.image[0]}`} alt=''/>:
-                <img src={`http://localhost:4000/images/${image}`} alt=''/>
+                <img src={`https://leena-backend-5.onrender.com/images/${product?.image[0]}`} alt=''/>:
+                <img src={`https://leena-backend-5.onrender.com/images/${image}`} alt=''/>
                 }
             </div>
         </div>

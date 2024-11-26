@@ -32,7 +32,7 @@ const Shopping = () => {
                     <div key={`${productId}-${size}-${color}`} className='table body py-2'>
                       <div className='d-flex align-items-center gap-2'>
                         <i className="fa-solid fa-xmark"></i>
-                        <img image={`http://localhost:4000/images/${product.image[0]}`} alt=''/>
+                        <img image={`https://leena-backend-5.onrender.com/${product.image[0]}`} alt=''/>
                         <p className='name'>{product.name}</p>
                       </div>
                       <p className='price fw-bold '>{product.price} D.A</p>

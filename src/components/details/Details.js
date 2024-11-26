@@ -49,7 +49,7 @@ const Details = () => {
         items: orderItems,
         amount: getTotalAmount()
       }
-      const response = await axios.post('http://localhost:4000/api/order/place-order', orderData, {headers:{token}});
+      const response = await axios.post('https://leena-backend-5.onrender.com/api/order/place-order', orderData, {headers:{token}});
       if(response.data.success){
         setCart([]);
         navigate('/order');

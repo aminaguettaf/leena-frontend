@@ -14,7 +14,7 @@ import Login from './pages/Login/Login';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/leena-frontend'>
     <ToastContainer />
     <Navbar/>
     <Sidebar/>

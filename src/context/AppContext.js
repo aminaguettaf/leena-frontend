@@ -37,7 +37,7 @@ const AppContextProvider =(props)=>{
 
     const getAllProducts = async()=>{
         try {
-            const response = await axios.get('http://localhost:4000/api/product/get-products');
+            const response = await axios.get('https://leena-backend-5.onrender.com/api/product/get-products');
             if(response.data.success){
             setAllProducts(response.data.data);
             console.log(response.data.data)}
@@ -72,7 +72,7 @@ const AppContextProvider =(props)=>{
             return cartData;
         });
         if(token){
-           await axios.post('http://localhost:4000/api/cart/addToCart', {productId, size, color},{headers:{token}});
+           await axios.post('https://leena-backend-5.onrender.com/api/cart/addToCart', {productId, size, color},{headers:{token}});
         }
     };
     const removeFromCart = async(productId, size, color)=>{ 
@@ -94,14 +94,14 @@ const AppContextProvider =(props)=>{
             return cartData;
         });
         if(token){
-            await axios.post('http://localhost:4000/api/cart/removeFromCart', {productId, size, color}, {headers:{token}});
+            await axios.post('https://leena-backend-5.onrender.com/api/cart/removeFromCart', {productId, size, color}, {headers:{token}});
             
         }
     }
 
     const getCart = async(token)=>{
         try {
-            const response = await axios.post('http://localhost:4000/api/cart/getCart', {}, {headers:{token}});
+            const response = await axios.post('https://leena-backend-5.onrender.com/api/cart/getCart', {}, {headers:{token}});
                 if(response.data.success){
                     setCart(response.data.cart);
             }
