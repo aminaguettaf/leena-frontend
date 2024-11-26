@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/leena-frontend/static/css/main.52206349.css",
-    "main.js": "/leena-frontend/static/js/main.03daba90.js",
+    "main.js": "/leena-frontend/static/js/main.d5dfb7b8.js",
     "static/media/hero.jpeg": "/leena-frontend/static/media/hero.c2f378b87951dd980e06.jpeg",
     "static/media/cat4.jpg": "/leena-frontend/static/media/cat4.6653e79d5a8bcf7174f8.jpg",
     "static/media/cat3.jpg": "/leena-frontend/static/media/cat3.9ee19a1858cf88771e50.jpg",
@@ -12,10 +12,10 @@
     "static/media/logo.png": "/leena-frontend/static/media/logo.d1d034fea155b7e5c0a4.png",
     "index.html": "/leena-frontend/index.html",
     "main.52206349.css.map": "/leena-frontend/static/css/main.52206349.css.map",
-    "main.03daba90.js.map": "/leena-frontend/static/js/main.03daba90.js.map"
+    "main.d5dfb7b8.js.map": "/leena-frontend/static/js/main.d5dfb7b8.js.map"
   },
   "entrypoints": [
     "static/css/main.52206349.css",
-    "static/js/main.03daba90.js"
+    "static/js/main.d5dfb7b8.js"
   ]
 }
